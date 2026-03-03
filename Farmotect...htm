@@ -1,0 +1,918 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>FARMOTECT.</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;}
+@font-face
+	{font-family:"Aptos Display";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#4472C4;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:112%;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#3864B2;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-link:"No Spacing Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#3864B2;}
+span.NoSpacingChar
+	{mso-style-name:"No Spacing Char";
+	mso-style-link:"No Spacing";
+	font-family:"Calibri Light",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#4472C4;}
+span.UnresolvedMention
+	{mso-style-name:"Unresolved Mention";
+	color:#605E5C;
+	background:#E1DFDD;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;}
+p.STYLE1, li.STYLE1, div.STYLE1
+	{mso-style-name:STYLE1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:Algerian;
+	color:black;
+	letter-spacing:-.5pt;
+	font-weight:bold;
+	text-decoration:underline;}
+p.STYLE1CxSpFirst, li.STYLE1CxSpFirst, div.STYLE1CxSpFirst
+	{mso-style-name:STYLE1CxSpFirst;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:Algerian;
+	color:black;
+	letter-spacing:-.5pt;
+	font-weight:bold;
+	text-decoration:underline;}
+p.STYLE1CxSpMiddle, li.STYLE1CxSpMiddle, div.STYLE1CxSpMiddle
+	{mso-style-name:STYLE1CxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:Algerian;
+	color:black;
+	letter-spacing:-.5pt;
+	font-weight:bold;
+	text-decoration:underline;}
+p.STYLE1CxSpLast, li.STYLE1CxSpLast, div.STYLE1CxSpLast
+	{mso-style-name:STYLE1CxSpLast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:Algerian;
+	color:black;
+	letter-spacing:-.5pt;
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='position:relative;z-index:251670528'><span
+style='position:absolute;left:233px;top:-59px;width:409px;height:87px'><img
+width=409 height=87 src="Farmotect.._files/image001.png" alt="FARMOTECH &#13;&#10;&#13;&#10;"></span></span><span
+style='position:absolute;z-index:251671552;margin-left:239px;margin-top:1px;
+width:376px;height:40px'><img width=376 height=40
+src="Farmotect.._files/image002.png" alt="FARMING SMARTER NOT HARDER "></span><span
+style='position:relative;z-index:251669504'><span style='position:absolute;
+left:186px;top:-68px;width:486px;height:87px'><img width=486 height=87
+src="Farmotect.._files/image003.png"></span></span><span style='position:relative;
+z-index:251668480'><span style='position:absolute;left:-95px;top:-63px;
+width:812px;height:82px'><img width=812 height=82
+src="Farmotect.._files/image004.png"></span></span>­­</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='position:relative;z-index:-1895824385'><span
+style='position:absolute;left:403px;top:-83px;width:564px;height:564px'><img
+width=564 height=564 src="Farmotect.._files/image005.png"></span></span>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=125 height=28></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=450 height=155 src="Farmotect.._files/image006.png"></td>
+ </tr>
+</table>
+
+</p>
+
+<p class=MsoNormal><span style='position:relative;z-index:-1895819264'><span
+style='position:absolute;left:-357px;top:-45px;width:1069px;height:615px'><img
+width=1069 height=615 src="Farmotect.._files/image007.png"></span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<br clear=ALL>
+
+<p class=MsoNormal><span style='position:absolute;z-index:251660288;margin-left:
+186px;margin-top:27px;width:506px;height:62px'><img width=506 height=62
+src="Farmotect.._files/image008.png" alt="BUSINESS  REPORT"></span>                               </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:.5in'>&nbsp;</p>
+
+<p class=MsoNormal>                                                                                                                                    </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=256 height=4></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=410 height=291 src="Farmotect.._files/image009.png"
+  alt="PREPARED BY:&#13;&#10;HARSH GUPTA  CO-FOUNDER and CFO &#13;&#10;KISHAN DUBEY  CEO and OPERATIONS HEAD&#13;&#10;SURAJ MAURYA FOUNDER, R&amp;D HEAD&#13;&#10;FARMOTECH&#13;&#10;&#13;&#10;H-107 SECTOR 12 NODIA   UTTAR PRADESH&#13;&#10;8368663902   9599401960&#13;&#10;FarmotechPVT@gmail.com&#13;&#10;&#13;&#10;"></td>
+ </tr>
+</table>
+
+ &nbsp;</p>
+
+<br clear=ALL>
+
+<p class=MsoNormal><span style='position:relative;z-index:-1895825410'><span
+style='position:absolute;left:-149px;top:-74px;width:728px;height:728px'><img
+width=728 height=728 src="Farmotect.._files/image010.png"></span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                                </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoNormal>                                                                                    </p>
+
+<p class=MsoNormal><span style='position:relative;z-index:251672576;left:-101px;
+top:21px;width:830px;height:75px'><img width=830 height=54
+src="Farmotect.._files/image011.png"></span>&nbsp;</p>
+
+<br clear=ALL>
+
+<p class=STYLE1>Business Description</p>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>Farmotech
+Ltd. was founded by Harsh Gupta, Kishan Dubey, and Suraj Maurya with the
+mission to revolutionize farming through robotics. As a company, we believe
+that agriculture, one of the most critical sectors in the world, is ripe for
+technological disruption. Our agricultural robot is designed to make farming
+operations more efficient by automating labour-intensive tasks.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>The
+company is structured to ensure that each aspect of the business is covered by
+our team of dedicated experts. Kishan Dubey, our CEO and Operations head, leads
+the charge in promoting Farmotech’s vision and building partnerships. Harsh
+Gupta, as Financial Manager, oversees all financial operations, ensuring the
+company's economic sustainability. Suraj Maurya leads the Research and
+Development team, constantly innovating to improve our product and keep us
+ahead of the competition.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>We
+are currently based in India and aim to expand operations globally as we gain
+traction in the domestic market. By focusing on automation, precision
+agriculture, and sustainability, we are positioning Farmotech to be a leader in
+the agricultural robotics industry.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<p class=STYLE1>EXecuTIVE SUMMARY </p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:13.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>Farmotech
+Pvt. Ltd. is a forward-thinking company focused on transforming the
+agricultural industry through automation. Our flagship product is an advanced
+agricultural -KISAN BOT- designed to help farmers reduce labour costs, improve
+efficiency, and increase crop yields. As labour shortages and rising costs in
+agriculture persist, Farmotech offers a smart solution that tackles these
+challenges head-on. Our robot is capable of automating key processes like
+seeding, weeding, and irrigation, allowing farmers to focus on decision-making
+rather than manual tasks.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-IN
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>We
+are initially launching in selected Indian states, targeting progressive
+farmers and agricultural cooperatives. By demonstrating our robot’s
+capabilities at local farming expos and through digital marketing campaigns, we
+plan to build trust and awareness. Our financial projections show steady growth
+in revenue as we scale operations and reach more customers. With a focus on
+research and innovation, we aim to continuously improve our product to meet the
+evolving needs of modern agriculture. Our goal is to become a key player in the
+agricultural technology sector, providing cost-effective, efficient solutions
+that empower farmers to farm smarter, not harder.</span></p>
+
+<p class=MsoNormal><span lang=EN-IN style='font-size:13.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN style='font-size:13.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-IN style='font-size:13.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpFirst><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpMiddle><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpLast>Vision</p>
+
+<h2 style='text-align:justify'><a name="_Toc186134589"></a><a
+name="_Toc186134566"><span style='line-height:112%;font-family:"Calibri",sans-serif;
+color:black'>&nbsp;</span></a></h2>
+
+<h2 style='text-align:justify'><span style='line-height:112%;font-family:"Aptos Display",sans-serif;
+color:black'>Farmotech aspires to revolutionize the agricultural sector by
+enhancing its intelligence, efficiency, and sustainability. Our objective is to
+diminish reliance on manual labor while assisting farmers in increasing their
+yields and minimizing waste and resource consumption. We foresee a future where
+every farmer, irrespective of their operation's scale, can access advanced
+robotic technologies that simplify, expedite, and enhance the profitability of
+their work. In our inaugural year, we intend to secure a significant presence
+in the agricultural market by concentrating on specific regions within India.
+Our primary aim is to attain product-market alignment, ensuring that our
+robotic solutions effectively address the requirements of Indian farmers.
+Following this milestone, we will expand our operations to other states and
+ultimately to international markets. Farmotech is committed to aiding farmers
+in their transition to more intelligent farming practices that not only enhance
+productivity but also lessen environmental repercussions. Our overarching
+ambition is to emerge as a global frontrunner in agricultural robotics,
+spearheading innovations that will define the future of farming.</span></h2>
+
+<h2 style='text-align:justify'><span style='line-height:112%;font-family:"Aptos Display",sans-serif;
+color:black'>&nbsp;</span></h2>
+
+<h2 style='text-align:justify'><span style='line-height:112%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></h2>
+
+<h2><span style='line-height:112%;font-family:"Calibri",sans-serif'>&nbsp;</span></h2>
+
+<h2><span style='line-height:112%;font-family:"Calibri",sans-serif'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<p class=STYLE1>PRDUCT DECRIPITON </p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>Farmotech's
+agricultural robot - <b><u>KISANBOT</u></b> represents a sophisticated and
+adaptable solution aimed at aiding farmers in the automation of essential
+agricultural tasks. This robot is capable of executing a diverse array of
+functions, such as spraying, tilling ploughing, grass cutting and  power source.
+Each of these capabilities is driven by cutting-edge sensors, enabling the
+robot to make informed decisions tailored to the specific requirements of the
+farm. Designed for user-friendliness, this product is accessible even to those
+farmers who may have limited experience with technology. It can be tailored to
+accommodate various farm sizes and types, making it appropriate for both small
+and large agricultural operations. Furthermore, the robot diminishes the
+dependency on human labor, which is increasingly becoming scarce and costly,
+particularly in rural regions. By automating labor-intensive processes, the
+robot empowers farmers to conserve time and concentrate on strategic planning,
+thereby enhancing productivity and profitability. Additionally, Farmotech's
+agricultural robot is engineered with sustainability as a core principle. It
+assists farmers in optimizing the use of resources such as water and
+fertilizers, thereby reducing waste and fostering environmentally responsible
+farming practices.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=STYLE1CxSpFirst><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpMiddle><span lang=EN-IN>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=475
+ style='width:356.25pt;border-collapse:collapse'>
+ <tr style='height:34.5pt'>
+  <td width=475 colspan=2 valign=bottom style='width:356.25pt;border:solid black 1.0pt;
+  background:yellow;padding:.75pt .75pt .75pt .75pt;height:34.5pt'>
+  <div>
+  <p class=STYLE1CxSpLast>COST PER UNIT</p>
+  </div>
+  </td>
+ </tr>
+ <tr style='height:30.0pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  background:#4472C4;padding:.75pt .75pt .75pt .75pt;height:30.0pt'>
+  <p class=STYLE1CxSpFirst>Category</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #4472C4;padding:.75pt .75pt .75pt .75pt;height:30.0pt'>
+  <p class=STYLE1CxSpLast>Amount (<span style='font-family:"Times New Roman",serif'>&#8377;</span>)</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  background:#D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Production Cost</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  46,000</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Operational Costs (incl. R&amp;D)</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:.75pt .75pt .75pt .75pt;
+  height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  9,000</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  background:#D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Marketing &amp; Sales Costs</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  4,210</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Financial Costs</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:.75pt .75pt .75pt .75pt;
+  height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  1,500</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  background:#D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Total Cost Before GST</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  60,710</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Profit Margin (20%)</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:.75pt .75pt .75pt .75pt;
+  height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  25,000</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  background:#D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Selling Price Before GST</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  85,710</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>GST (5%)</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:.75pt .75pt .75pt .75pt;
+  height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  4,290</p>
+  </td>
+ </tr>
+ <tr style='height:23.25pt'>
+  <td width=285 style='width:213.75pt;border:solid black 1.0pt;border-top:none;
+  background:#D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpFirst>Final Selling Price</p>
+  </td>
+  <td width=190 style='width:142.5pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #D9E1F2;padding:.75pt .75pt .75pt .75pt;height:23.25pt'>
+  <p class=STYLE1CxSpLast><span style='font-family:"Times New Roman",serif'>&#8377;</span>
+  90,000</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><u><span lang=EN-IN style='font-size:28.0pt;line-height:
+107%;font-family:Algerian;color:#2F5496;letter-spacing:-.5pt'><img width=623
+height=326 src="Farmotect.._files/image012.png"></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:28.0pt;line-height:107%;
+font-family:Algerian;color:#2F5496;letter-spacing:-.5pt'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=STYLE1CxSpFirst><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpMiddle><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpLast>MARKET </p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>The global
+agricultural robotics market is experiencing rapid expansion, propelled by the
+growing demand for efficiency in farming and the escalating costs associated
+with labor. In 2023, the market was valued at approximately USD 6.94 billion,
+with forecasts suggesting it could reach around USD 20 billion by 2029. This
+presents a substantial growth opportunity for companies operating in this
+sector, particularly those capable of providing innovative and cost-effective
+solutions like Farmotech. In India, the agricultural robotics market is still
+emerging but is on a steady upward trajectory. As of 2023, the market was
+valued at about USD 0.4 billion and is projected to grow to USD 1.2 billion by
+2029. The Indian agricultural industry remains heavily reliant on manual labor,
+which is increasingly becoming a challenge.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<span style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><img width=524 height=290
+src="Farmotect.._files/image013.png" align=left hspace=12></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><img width=480 height=288 id="Chart 1"
+src="Farmotect.._files/image014.png"><span style='font-size:16.0pt;line-height:
+107%;font-family:"Aptos Display",sans-serif'><br clear=all style='page-break-before:
+always'>
+</span></p>
+
+<p class=STYLE1>Target Audience</p>
+
+<h2><a name="_Toc186134593"></a><a name="_Toc186134570"><span style='line-height:
+112%;font-family:"Calibri",sans-serif;color:black'>&nbsp;</span></a></h2>
+
+<h2 style='text-align:justify'><span style='line-height:112%;font-family:"Aptos Display",sans-serif;
+color:black'>Farmotech primarily focuses on small and marginal farmers and
+agricultural cooperatives in India who are receptive to new technologies and
+are seeking methods to enhance efficiency, lower operational costs, and boost
+crop yields. Our agricultural robot is specifically designed to cater to small
+and medium-sized farmers, who frequently encounter labor shortages and
+escalating input costs. These farmers are particularly keen on solutions that
+enable them to optimize productivity without substantially increasing their
+operational expenditures. In addition to small and medium-sized farmers, we
+also aim to engage large-scale farming operations that necessitate automation
+for the effective management of vast agricultural fields. These larger
+enterprises possess the financial resources to invest in advanced technologies
+that facilitate the scaling of operations while either maintaining or reducing
+labor costs. Agricultural cooperatives and farming organizations represent
+another crucial segment of our target audience. These entities often play a
+significant role in shaping farming practices within their regions and can
+assist in promoting the adoption of Farmotech’s robot among their members. We
+expect our early adopters to emerge from states with high agricultural
+productivity and a growing interest in precision farming, such as Punjab,
+Maharashtra, and Haryana. As the advantages of our technology become
+increasingly apparent, we foresee a wider acceptance across various
+agricultural sectors.</span></h2>
+
+<h2 style='text-align:justify'><span style='line-height:112%;font-family:"Aptos Display",sans-serif;
+color:black'>&nbsp;</span></h2>
+
+<p class=STYLE1CxSpFirst><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpLast>Goal</p>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>Farmotech aspires to
+become a frontrunner in the agricultural automation sector by delivering
+cutting-edge robotic solutions that improve efficiency and productivity for
+farmers. In our inaugural year, we plan to distribute 200 units in strategic
+states such as Punjab, Haryana and Andhra Pradesh through focused marketing
+efforts, strategic partnerships, and practical demonstrations in the field. In
+the short term, our priority is to establish a solid product-market fit and
+cultivate a robust customer base. Looking ahead, we aim to secure 10% of the
+Indian market within five years and pursue international expansion, promoting
+the adoption of smart farming technologies that enhance sustainability and
+profitability in agriculture.</span></p>
+
+<h2 style='text-align:justify'><span style='line-height:112%;font-family:"Aptos Display",sans-serif;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<h2><span style='font-size:28.0pt;line-height:112%;font-family:Algerian;
+color:#2F5496'>&nbsp;</span></h2>
+
+<p class=STYLE1CxSpFirst><span style='text-decoration:none'>&nbsp;</span></p>
+
+<p class=STYLE1CxSpLast>Estimation or key focus </p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>Year 1: Establishment
+and Initial Market Entry</span></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Revenue</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     Modest revenue from early sales (targeting one or two states).</span></li>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Key Focus</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     Product validation, customer feedback, and brand awareness.</span></li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>Estimated Sales</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+~200-300 agricultural robots sold in the first year, depending on marketing</span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>Year 2-3 Regional
+Expansion</span></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Revenue</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     Increased sales as Farmotech expands to more states.</span></li>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Key Focus</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     Market penetration and partnership with local agricultural cooperatives or
+     government bodies.</span></li>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Estimated Sales</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     ~900-1000 agricultural robots sold.</span></li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>Year 4: National Growth
+and Scaling</span></b></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Revenue</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     Significant growth from nationwide sales and possibly exploring exports.</span></li>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Key Focus</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     Scaling production, enhancing distribution channels, and strategic
+     partnerships.</span></li>
+ <li class=MsoNormal style='text-align:justify'><b><span style='font-size:16.0pt;
+     line-height:107%;font-family:"Aptos Display",sans-serif'>Estimated Sales</span></b><span
+     style='font-size:16.0pt;line-height:107%;font-family:"Aptos Display",sans-serif'>:
+     2000-2500 agricultural robots sold.</span></li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:16.0pt;
+line-height:107%;font-family:"Aptos Display",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing><span style='font-size:13.0pt;font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
